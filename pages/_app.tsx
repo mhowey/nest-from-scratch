@@ -1,6 +1,10 @@
-import '@components/styles/globals.css'
-import type { AppProps } from 'next/app'
+import "@components/styles/globals.css";
+import type { AppProps } from "next/app";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <div className="mainWrapper">
+      <Component {...pageProps} />
+    </div>
+  );
 }

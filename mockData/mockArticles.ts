@@ -1,20 +1,43 @@
-import { Article } from "../classes/Article";
+import { IArticle } from "../classes/ArticleLister";
 
-export const articles: Article[] = [
+/** Emulate "Real Data"
+ * ! Our Mock Data
+ * :: This is meant to emulate "real data" that we would normally retrieve from
+ * :: some sort of network call to a data store of some sort. I will be adding this
+ * :: functionality in later - probably simply to SQLlite to start. Then I will
+ * :: also genericize the database connector (not sure exactly how yet, perhaps,
+ * :: I can integrate prisma or something? just thinking out loud here.)
+ */
+
+export const articles: IArticle[] = [
   {
-    created: new Date(),
-    author: 1,
+    id: 1,
     title: "Article Number One",
     slug: "article-number-one",
-    tags: ["general", "coding", "blog"],
     content: "This is the content for article one.",
   },
   {
-    created: new Date(),
-    author: 2,
+    id: 2,
     title: "Article Number Two",
     slug: "article-number-two",
-    tags: ["general", "coding", "blog"],
     content: "This is the content for article two.",
+  },
+  {
+    id: 3,
+    title: "Article Number Three",
+    slug: "article-number-three",
+    content: "This is the content for article three.",
+  },
+  {
+    id: 4,
+    title: "Article Number Four",
+    slug: "article-number-four",
+    content: "This is the content for article four.",
+  },
+  {
+    id: 5,
+    title: "Article Number Five",
+    slug: "article-number-five",
+    content: "This is the content for article five.",
   },
 ];
