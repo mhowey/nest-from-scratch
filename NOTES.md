@@ -10,7 +10,7 @@
 
 `typescript`: Nest apps are written in TypeScript.
 
-## Main Parts of Nest
+## Main Parts of Nest:
 
 - Controllers
 - Modules
@@ -20,3 +20,8 @@
 - Guards
 - Interceptors
 - Repositories
+
+## Two Mandatory Parts:
+
+- Controller
+- Module
